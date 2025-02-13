@@ -21,4 +21,12 @@ public class Book {
 	public Author getAuthor() {
 		return author;
 	}
+	
+	public void displayBook() {
+		System.out.println("Title: " + getTitle());
+		System.out.println("ISBN: " + getIsbn());
+		System.out.println("Author: " + getAuthor().getName());
+		System.out.println("Biography: " + getAuthor().getBio());
+		System.out.println("------------------------");
+	}
 }

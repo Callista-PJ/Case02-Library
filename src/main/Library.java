@@ -34,15 +34,8 @@ public class Library {
 	public void displayLibraryBooks() {
 		System.out.println("Books in Library:");
 		for(Book book : books) {
-			displayBookDetails(book);
+			book.displayBook();
 		}
-	}
-	private void displayBookDetails(Book book) {
-		System.out.println("Title: " + book.getTitle());
-		System.out.println("ISBN: " + book.getIsbn());
-		System.out.println("Author: " + book.getAuthor().getName());
-		System.out.println("Biography: " + book.getAuthor().getBio());
-		System.out.println("------------------------");
 	}
 
 }
